@@ -1,0 +1,30 @@
+Ao executar o código, ele irá imprimir os números corretos e as estrelas corretas para cada aposta realizada pelos jogadores.
+
+Como existem 20 jogadores (numJogadores = 20), o código irá gerar 20 apostas diferentes. Cada jogador irá fazer uma aposta aleatória, escolhendo 5 números de 1 a 50 e 2 estrelas de 1 a 12.
+
+Em seguida, cada aposta será comparada com uma chave gerada aleatoriamente, que também contém 5 números e 2 estrelas. A função comparaResultados() irá determinar quais números e estrelas da aposta correspondem à chave.
+
+Os resultados serão armazenados em uma fila compartilhada (resultados) usando a função put(). Em seguida, os resultados serão impressos usando um loop while até que a fila esteja vazia. Para cada resultado, será exibido o número de acertos (números corretos e estrelas corretas).
+
+Portanto, ao executar o código, você verá a impressão dos números corretos e das estrelas corretas para cada aposta realizada pelos 20 jogadores.
+
+--------------alterações-----------
+Importei o módulo threading para trabalhar com threads em vez de processos.
+
+Criei uma função processamentoApostas que é responsável pelo processamento de cada aposta. Essa função é executada por cada thread e retira as apostas da fila compartilhada apostas, chama a função cliente para processar a aposta e adiciona o resultado à fila compartilhada resultados.
+
+Substituí o uso do módulo multiprocessing pelo módulo threading para lidar com threads em vez de processos. Isso permite que os threads compartilhem a mesma memória e se comuniquem por meio das filas compartilhadas.
+
+Modifiquei o loop principal do servidor para criar threads em vez de processos. Agora, cada jogador é processado por um thread separado.
+
+Usei a função apostas.join() para garantir que todas as apostas sejam processadas antes de prosseguir para a exibição dos resultados.
+
+Ao gerar a chave fora do loop for e passá-la como argumento para a função cliente, estamos garantindo que todos os jogadores estejam usando a mesma chave para comparar suas apostas. Dessa forma, todos os jogadores estarão competindo pelos mesmos números e estrelas sorteados, o que é fundamental em um jogo de loteria.
+
+Portanto, ao gerar a chave antes do loop for, estamos estabelecendo a chave comum para todos os jogadores, e dentro do loop, cada jogador faz sua aposta e compara com essa mesma chave.
+
+Usando a função sorted(), podemos garantir que os elementos nos conjuntos estejam ordenados de forma consistente. Isso significa que, independentemente da ordem em que os elementos são gerados ou inseridos nos conjuntos, eles serão ordenados antes da comparação com a chave.
+
+Ao usar sorted(), os elementos nos conjuntos serão colocados em uma ordem específica antes da comparação, permitindo que você verifique corretamente se os números e as estrelas corretas correspondem à chave.
+
+Dessa forma, ao usar sorted() para ordenar os elementos nos conjuntos antes da comparação, garantimos uma comparação correta e precisa com a chave.
