@@ -1,39 +1,39 @@
 
 <--- Jogador 1 --->
-Numeros corretos: [5, 16, 21, 48, 49]
-Estrelas corretas: [3, 11]
+Numeros corretos: [14, 16, 18, 24, 35]
+Estrelas corretas: [4, 8]
 Vencedor do JackPot no valor de: 1000000
 
 <--- Jogador 2 --->
-Numeros corretos: [21, 48, 49]
-Estrelas corretas: [11]
+Numeros corretos: []
+Estrelas corretas: []
 
 <--- Jogador 3 --->
 Numeros corretos: []
-Estrelas corretas: [11]
+Estrelas corretas: []
 
 <--- Jogador 4 --->
-Numeros corretos: []
+Numeros corretos: [35]
 Estrelas corretas: []
 
 <--- Jogador 5 --->
-Numeros corretos: [16]
-Estrelas corretas: []
+Numeros corretos: []
+Estrelas corretas: [4]
 
 <--- Jogador 6 --->
-Numeros corretos: [49]
+Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 7 --->
-Numeros corretos: [5]
-Estrelas corretas: []
+Numeros corretos: [24, 35]
+Estrelas corretas: [8]
 
 <--- Jogador 8 --->
-Numeros corretos: []
-Estrelas corretas: [3]
+Numeros corretos: [14]
+Estrelas corretas: []
 
 <--- Jogador 9 --->
-Numeros corretos: [21]
+Numeros corretos: [14, 24]
 Estrelas corretas: []
 
 <--- Jogador 10 --->
@@ -42,40 +42,40 @@ Estrelas corretas: []
 
 <--- Jogador 11 --->
 Numeros corretos: []
-Estrelas corretas: [3]
+Estrelas corretas: []
 
 <--- Jogador 12 --->
-Numeros corretos: []
+Numeros corretos: [18, 24]
 Estrelas corretas: []
 
 <--- Jogador 13 --->
-Numeros corretos: []
-Estrelas corretas: []
+Numeros corretos: [18, 24]
+Estrelas corretas: [4]
 
 <--- Jogador 14 --->
-Numeros corretos: [48]
-Estrelas corretas: []
+Numeros corretos: [14]
+Estrelas corretas: [8]
 
 <--- Jogador 15 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 16 --->
-Numeros corretos: [49]
-Estrelas corretas: [11]
+Numeros corretos: [35]
+Estrelas corretas: []
 
 <--- Jogador 17 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 18 --->
-Numeros corretos: []
-Estrelas corretas: [3]
+Numeros corretos: [24]
+Estrelas corretas: [4]
 
 <--- Jogador 19 --->
-Numeros corretos: [48]
+Numeros corretos: [18]
 Estrelas corretas: []
 
 <--- Jogador 20 --->
 Numeros corretos: []
-Estrelas corretas: [3]
+Estrelas corretas: []

@@ -105,6 +105,6 @@ def servidor():
 
         jogador += 1 # Variável jogador é incrementada até que o loop termine
     file_servidor.close()
-
-# Inicializa servidor
+    
+# Começa o server
 servidor()
