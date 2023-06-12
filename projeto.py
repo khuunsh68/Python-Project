@@ -2,12 +2,14 @@ import random
 import multiprocessing as mp
 import queue
 import threading
-import time # Falta colocar o time a funcionar
+import time
 
 # Configuração do número de jogadores no servidor
 numJogadores = 20
 # Implementação do JackPot
 jackPot = 1000000 # Prémio de 1 Milhão
+# Tempo de apostas estipulado
+tempoApostas = 18 # 1 minuto de apostas
 
 # Função que vai gerar uma chave aleatória
 def geraChave():
@@ -36,10 +38,6 @@ def cliente(aposta, resultados, chave):
     resultado = {'numerosCorretos': numerosCorretos, 'estrelasCorretas': estrelasCorretas, 'chave': chave, 'vencedor': vencedor}
     resultados.put(resultado)
 
-    # Cria um ficheiro de log caso ainda não exista e regista as apostas feitas
-    file = open('cliente_log.txt', 'a')
-    file.write(f"\nAposta: {aposta}\n")
-    file.close()
 
 # Função que faz o processamento das apostas
 def processamentoApostas(apostas, resultados, chave):
@@ -57,8 +55,18 @@ def servidor():
 
     # Gera uma chave única com os resultados certos
     chave = geraChave()
+    
+    # Criação do ficheiro log de clientes
+    file_cliente = open('clientes_log.txt', 'w')
+    
+    tempoInicial = time.time() # Obter tempo inicial
 
     for jogador in range (numJogadores): # () serve para passar numJogadores como argumento para a função 'range'
+    	# Verificar se o tempo para apostar já expirou ou ainda não
+        if time.time() - tempoInicial > tempoApostas:
+    	    # Tempo de apostas expirou
+    	    print("Tempo de apostas expirou!")
+    	    break
         # Simulação de uma aposta vencedora do jackPot como teste da funcionalidade
         if jogador == 0:
             aposta = chave # Aposta feita igual à chave
@@ -70,28 +78,33 @@ def servidor():
         t = threading.Thread(target=processamentoApostas, args=(apostas, resultados, chave))
         t.start()
         threads.append(t)
-
+        
+        # Apostas feitas pelos clientes são guardadas no ficheiro log dos clientes
+        file_cliente.write(f"\nAposta : {aposta}\n")
+        
     apostas.join()
+    file_cliente.close()
 
     # Print da chave correta
     print("Chave:", chave)
     print("Recibos gerados!")
 
     jogador = 1 # Inicialização da variável jogador a ser usada a seguir
-    file = open('servidor_log.txt', 'w') # Ficheiro de log do servidor é aberto em modo escritura
+    file_servidor = open('servidor_log.txt', 'w') # Ficheiro de log do servidor é aberto em modo escritura
     # Enquanto existirem resultados, vão ser todos guardados para cada jogador
     while not resultados.empty():
         resultado = resultados.get()
-        file.write(f"\n<--- Jogador {jogador} --->\n")
-        file.write(f"Numeros corretos: {resultado['numerosCorretos']}\n")
-        file.write(f"Estrelas corretas: {resultado['estrelasCorretas']}\n")
+        file_servidor.write(f"\n<--- Jogador {jogador} --->\n")
+        file_servidor.write(f"Numeros corretos: {resultado['numerosCorretos']}\n")
+        file_servidor.write(f"Estrelas corretas: {resultado['estrelasCorretas']}\n")
 
         # Caso o jogador ganhe o jackpot
         if resultado['vencedor']:
-            file.write(f"Vencedor do JackPot no valor de: {jackPot}\n")
+            file_servidor.write(f"Vencedor do JackPot no valor de: {jackPot}\n")
+            print(f"Jogador {jogador} ganhou o JackPot no valor total de {jackPot} euros")
 
         jogador += 1 # Variável jogador é incrementada até que o loop termine
-    file.close()
+    file_servidor.close()
 
 # Inicializa servidor
 servidor()

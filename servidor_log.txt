@@ -1,40 +1,40 @@
 
 <--- Jogador 1 --->
-Numeros corretos: [7, 35, 41, 46, 50]
-Estrelas corretas: [3, 10]
+Numeros corretos: [5, 16, 21, 48, 49]
+Estrelas corretas: [3, 11]
 Vencedor do JackPot no valor de: 1000000
 
 <--- Jogador 2 --->
-Numeros corretos: [41]
-Estrelas corretas: []
+Numeros corretos: [21, 48, 49]
+Estrelas corretas: [11]
 
 <--- Jogador 3 --->
 Numeros corretos: []
-Estrelas corretas: []
+Estrelas corretas: [11]
 
 <--- Jogador 4 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 5 --->
-Numeros corretos: []
-Estrelas corretas: [10]
+Numeros corretos: [16]
+Estrelas corretas: []
 
 <--- Jogador 6 --->
-Numeros corretos: []
+Numeros corretos: [49]
 Estrelas corretas: []
 
 <--- Jogador 7 --->
-Numeros corretos: [41]
+Numeros corretos: [5]
 Estrelas corretas: []
 
 <--- Jogador 8 --->
 Numeros corretos: []
-Estrelas corretas: [10]
+Estrelas corretas: [3]
 
 <--- Jogador 9 --->
-Numeros corretos: []
-Estrelas corretas: [3, 10]
+Numeros corretos: [21]
+Estrelas corretas: []
 
 <--- Jogador 10 --->
 Numeros corretos: []
@@ -42,40 +42,40 @@ Estrelas corretas: []
 
 <--- Jogador 11 --->
 Numeros corretos: []
-Estrelas corretas: []
+Estrelas corretas: [3]
 
 <--- Jogador 12 --->
-Numeros corretos: [46]
-Estrelas corretas: [10]
+Numeros corretos: []
+Estrelas corretas: []
 
 <--- Jogador 13 --->
-Numeros corretos: [35]
-Estrelas corretas: [3]
+Numeros corretos: []
+Estrelas corretas: []
 
 <--- Jogador 14 --->
-Numeros corretos: [50]
-Estrelas corretas: [3]
+Numeros corretos: [48]
+Estrelas corretas: []
 
 <--- Jogador 15 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 16 --->
-Numeros corretos: [35]
-Estrelas corretas: []
+Numeros corretos: [49]
+Estrelas corretas: [11]
 
 <--- Jogador 17 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 18 --->
-Numeros corretos: [46]
+Numeros corretos: []
 Estrelas corretas: [3]
 
 <--- Jogador 19 --->
-Numeros corretos: []
+Numeros corretos: [48]
 Estrelas corretas: []
 
 <--- Jogador 20 --->
 Numeros corretos: []
-Estrelas corretas: []
+Estrelas corretas: [3]
