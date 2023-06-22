@@ -67,12 +67,9 @@ def servidor():
     	    # Tempo de apostas expirou
     	    print("Tempo de apostas expirou!")
     	    break
-        # Simulação de uma aposta vencedora do jackPot como teste da funcionalidade
-        if jogador == 0:
-            aposta = chave # Aposta feita igual à chave
-        else:
-            # Para os restantes jogadores são feitas apostas ao calhas
-            aposta = {'numeros': random.sample(range(1, 51), 5), 'estrelas': random.sample(range(1, 13), 2)}
+        
+        # são feitas apostas ao calhas
+        aposta = {'numeros': random.sample(range(1, 51), 5), 'estrelas': random.sample(range(1, 13), 2)}
 
         apostas.put(aposta) # Aposta adicionada à lista de apostas
         t = threading.Thread(target=processamentoApostas, args=(apostas, resultados, chave))
@@ -86,7 +83,7 @@ def servidor():
     file_cliente.close()
 
     # Print da chave correta
-    print("Chave:", chave)
+    print("Apostas feitas!")
     print("Recibos gerados!")
 
     jogador = 1 # Inicialização da variável jogador a ser usada a seguir
@@ -101,7 +98,7 @@ def servidor():
         # Caso o jogador ganhe o jackpot
         if resultado['vencedor']:
             file_servidor.write(f"Vencedor do JackPot no valor de: {jackPot}\n")
-            print(f"Jogador {jogador} ganhou o JackPot no valor total de {jackPot} euros")
+            print(f"Parabens! Jogador {jogador} ganhou o JackPot no valor total de {jackPot} euros")
 
         jogador += 1 # Variável jogador é incrementada até que o loop termine
     file_servidor.close()

@@ -28,3 +28,57 @@ Usando a função sorted(), podemos garantir que os elementos nos conjuntos este
 Ao usar sorted(), os elementos nos conjuntos serão colocados em uma ordem específica antes da comparação, permitindo que você verifique corretamente se os números e as estrelas corretas correspondem à chave.
 
 Dessa forma, ao usar sorted() para ordenar os elementos nos conjuntos antes da comparação, garantimos uma comparação correta e precisa com a chave.
+
+-----------------------------------
+
+Configuração inicial:
+
+numJogadores = 20: Número de jogadores no servidor. Define o limite máximo de apostas.
+jackPot = 1000000: Valor do prêmio do jackpot, definido como 1 milhão.
+tempoApostas = 18: Tempo de apostas estipulado em segundos, neste caso, 18 segundos.
+Função geraChave():
+
+Gera uma chave aleatória para o jogo do Euromilhões, que consiste em uma combinação de 5 números e 2 estrelas.
+Utiliza a função random.sample() para gerar números únicos aleatórios dentro de um intervalo.
+Função comparaResultados(aposta, chave):
+
+Compara os números e estrelas apostados em uma aposta com a chave correta.
+Converte os números e estrelas em conjuntos (set) para facilitar a comparação.
+Usa as operações de interseção entre conjuntos (intersection()) para encontrar os números e estrelas corretas.
+Retorna os números e estrelas corretas em listas ordenadas.
+Função verificacaoJackPot(resultado, chave):
+
+Verifica se a aposta foi vencedora do jackpot, comparando os números e estrelas corretas com a chave correta.
+Retorna um valor booleano indicando se a aposta foi vencedora.
+Função cliente(aposta, resultados, chave):
+
+Implementa a lógica do cliente.
+Compara os resultados da aposta com a chave correta utilizando a função comparaResultados().
+Verifica se a aposta é vencedora do jackpot utilizando a função verificacaoJackPot().
+Armazena os resultados da aposta em um dicionário e adiciona-o à fila de resultados compartilhada.
+Função processamentoApostas(apostas, resultados, chave):
+
+Realiza o processamento das apostas.
+Enquanto houver apostas na fila apostas, obtém uma aposta da fila, processa-a chamando a função cliente(), e marca a aposta como concluída na fila.
+Essa função é executada por várias threads simultaneamente.
+Função servidor():
+
+Implementa a lógica do servidor.
+Cria filas compartilhadas para armazenar as apostas e resultados.
+Gera uma chave única chamando a função geraChave().
+Abre o arquivo de log para os clientes.
+Inicia a contagem de tempo para o período de apostas.
+Itera sobre o número de jogadores (até numJogadores) e realiza as seguintes ações:
+Verifica se o tempo para apostas expirou. Se sim, encerra o loop.
+Adiciona a aposta à fila de apostas.
+Cria uma thread para processar as apostas chamando a função processamentoApostas().
+Armazena a thread em uma lista.
+Registra a aposta no arquivo de log dos clientes.
+Aguarda até que todas as apostas sejam processadas (usando o método join() da fila de apostas).
+Fecha o arquivo de log dos clientes.
+Imprime a chave correta.
+Abre o arquivo de log do servidor.
+Itera sobre os resultados obtidos da fila de resultados e registra-os no arquivo de log.
+Verifica se algum jogador ganhou o jackpot e exibe uma mensagem correspondente.
+Fecha o arquivo de log do servidor.
+Inicia o servidor chamando a função servidor().

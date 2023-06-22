@@ -1,40 +1,40 @@
 
-Aposta : {'numeros': [18, 35, 24, 14, 16], 'estrelas': [8, 4]}
+Aposta : {'numeros': [32, 25, 18, 49, 40], 'estrelas': [6, 7]}
 
-Aposta : {'numeros': [17, 7, 37, 5, 45], 'estrelas': [9, 3]}
+Aposta : {'numeros': [4, 13, 20, 30, 39], 'estrelas': [3, 8]}
 
-Aposta : {'numeros': [30, 17, 27, 39, 42], 'estrelas': [3, 9]}
+Aposta : {'numeros': [34, 43, 19, 3, 13], 'estrelas': [9, 11]}
 
-Aposta : {'numeros': [23, 46, 35, 43, 25], 'estrelas': [11, 10]}
+Aposta : {'numeros': [27, 3, 5, 34, 40], 'estrelas': [10, 12]}
 
-Aposta : {'numeros': [41, 17, 27, 49, 38], 'estrelas': [3, 4]}
+Aposta : {'numeros': [1, 11, 50, 37, 21], 'estrelas': [5, 11]}
 
-Aposta : {'numeros': [40, 6, 5, 26, 37], 'estrelas': [7, 5]}
+Aposta : {'numeros': [37, 43, 1, 13, 39], 'estrelas': [12, 2]}
 
-Aposta : {'numeros': [35, 24, 25, 29, 21], 'estrelas': [8, 1]}
+Aposta : {'numeros': [32, 5, 7, 16, 8], 'estrelas': [12, 3]}
 
-Aposta : {'numeros': [41, 17, 14, 37, 43], 'estrelas': [10, 1]}
+Aposta : {'numeros': [33, 38, 39, 11, 3], 'estrelas': [6, 5]}
 
-Aposta : {'numeros': [12, 3, 24, 44, 14], 'estrelas': [3, 7]}
+Aposta : {'numeros': [38, 17, 27, 21, 14], 'estrelas': [2, 6]}
 
-Aposta : {'numeros': [21, 20, 49, 25, 43], 'estrelas': [10, 3]}
+Aposta : {'numeros': [46, 27, 41, 6, 45], 'estrelas': [6, 4]}
 
-Aposta : {'numeros': [38, 34, 49, 37, 45], 'estrelas': [10, 2]}
+Aposta : {'numeros': [2, 15, 18, 36, 20], 'estrelas': [4, 5]}
 
-Aposta : {'numeros': [18, 24, 20, 19, 11], 'estrelas': [7, 3]}
+Aposta : {'numeros': [24, 50, 16, 30, 37], 'estrelas': [7, 2]}
 
-Aposta : {'numeros': [3, 9, 18, 38, 24], 'estrelas': [12, 4]}
+Aposta : {'numeros': [47, 38, 41, 40, 46], 'estrelas': [7, 6]}
 
-Aposta : {'numeros': [14, 4, 33, 7, 36], 'estrelas': [8, 12]}
+Aposta : {'numeros': [20, 5, 17, 19, 32], 'estrelas': [3, 7]}
 
-Aposta : {'numeros': [20, 41, 8, 43, 17], 'estrelas': [9, 2]}
+Aposta : {'numeros': [28, 26, 41, 29, 3], 'estrelas': [9, 5]}
 
-Aposta : {'numeros': [11, 35, 34, 19, 13], 'estrelas': [1, 9]}
+Aposta : {'numeros': [41, 37, 43, 48, 45], 'estrelas': [7, 2]}
 
-Aposta : {'numeros': [39, 7, 8, 2, 40], 'estrelas': [2, 3]}
+Aposta : {'numeros': [22, 16, 11, 39, 15], 'estrelas': [1, 9]}
 
-Aposta : {'numeros': [10, 4, 22, 37, 24], 'estrelas': [9, 4]}
+Aposta : {'numeros': [26, 47, 27, 8, 18], 'estrelas': [3, 10]}
 
-Aposta : {'numeros': [1, 11, 27, 18, 42], 'estrelas': [7, 6]}
+Aposta : {'numeros': [3, 14, 42, 4, 50], 'estrelas': [11, 12]}
 
-Aposta : {'numeros': [47, 37, 11, 50, 42], 'estrelas': [2, 5]}
+Aposta : {'numeros': [13, 34, 10, 41, 39], 'estrelas': [10, 3]}

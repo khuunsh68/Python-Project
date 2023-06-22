@@ -1,67 +1,66 @@
 
 <--- Jogador 1 --->
-Numeros corretos: [14, 16, 18, 24, 35]
-Estrelas corretas: [4, 8]
-Vencedor do JackPot no valor de: 1000000
+Numeros corretos: [49]
+Estrelas corretas: []
 
 <--- Jogador 2 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 3 --->
-Numeros corretos: []
+Numeros corretos: [3]
 Estrelas corretas: []
 
 <--- Jogador 4 --->
-Numeros corretos: [35]
+Numeros corretos: [3]
 Estrelas corretas: []
 
 <--- Jogador 5 --->
-Numeros corretos: []
-Estrelas corretas: [4]
+Numeros corretos: [21]
+Estrelas corretas: [5]
 
 <--- Jogador 6 --->
 Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 7 --->
-Numeros corretos: [24, 35]
-Estrelas corretas: [8]
-
-<--- Jogador 8 --->
-Numeros corretos: [14]
+Numeros corretos: []
 Estrelas corretas: []
 
+<--- Jogador 8 --->
+Numeros corretos: [3, 38]
+Estrelas corretas: [5]
+
 <--- Jogador 9 --->
-Numeros corretos: [14, 24]
+Numeros corretos: [17, 21, 38]
 Estrelas corretas: []
 
 <--- Jogador 10 --->
 Numeros corretos: []
-Estrelas corretas: []
+Estrelas corretas: [4]
 
 <--- Jogador 11 --->
 Numeros corretos: []
-Estrelas corretas: []
+Estrelas corretas: [4, 5]
 
 <--- Jogador 12 --->
-Numeros corretos: [18, 24]
-Estrelas corretas: []
-
-<--- Jogador 13 --->
-Numeros corretos: [18, 24]
-Estrelas corretas: [4]
-
-<--- Jogador 14 --->
-Numeros corretos: [14]
-Estrelas corretas: [8]
-
-<--- Jogador 15 --->
 Numeros corretos: []
 Estrelas corretas: []
 
+<--- Jogador 13 --->
+Numeros corretos: [38]
+Estrelas corretas: []
+
+<--- Jogador 14 --->
+Numeros corretos: [17]
+Estrelas corretas: []
+
+<--- Jogador 15 --->
+Numeros corretos: [3]
+Estrelas corretas: [5]
+
 <--- Jogador 16 --->
-Numeros corretos: [35]
+Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 17 --->
@@ -69,11 +68,11 @@ Numeros corretos: []
 Estrelas corretas: []
 
 <--- Jogador 18 --->
-Numeros corretos: [24]
-Estrelas corretas: [4]
+Numeros corretos: []
+Estrelas corretas: []
 
 <--- Jogador 19 --->
-Numeros corretos: [18]
+Numeros corretos: [3]
 Estrelas corretas: []
 
 <--- Jogador 20 --->
